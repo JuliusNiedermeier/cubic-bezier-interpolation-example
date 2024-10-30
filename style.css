@@ -1,0 +1,68 @@
+body {
+  background-color: lavenderblush;
+  margin: 0;
+  padding: 100px;
+}
+
+* {
+  color: darkslategray;
+  font-family: sans-serif;
+}
+
+input:not([type="range"]),
+button {
+  background-color: lavender;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus:not([type="range"]),
+button:focus {
+  box-shadow: 0 0 0 2px coral;
+}
+
+#inputs {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#points-list {
+  margin-bottom: 50px;
+}
+
+#points-list span {
+  padding: 5px 10px;
+  background-color: lavender;
+  border-radius: 5px;
+}
+
+#points-list span + span {
+  margin-left: 5px;
+}
+
+#svg {
+  border: 1px dashed coral;
+}
+
+#linear-path {
+  stroke: darkslategray;
+  fill: none;
+  stroke-width: 0.25;
+  transition: opacity 500ms ease;
+}
+
+#linear-path.hide {
+  opacity: 0;
+}
+
+#interpolated-path {
+  stroke: coral;
+  fill: none;
+  stroke-width: 0.25;
+}
